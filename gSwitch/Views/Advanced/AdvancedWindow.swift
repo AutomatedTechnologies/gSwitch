@@ -172,7 +172,7 @@ class AdvancedWindow: BossyWindow {
     
     @IBAction func setGPUFeatureRunClicked(_ sender: NSButton) {
         let boolean = setGPUFeatureBool.intValue == 1
-        let feature = setGPUStateArg.intValue
+        let feature = setGPUFeatureFeature.intValue
         
         let success = appDelegate.manager
             .setFeatureInfo(feature: Features(rawValue: Int(feature))!, enabled: boolean)
